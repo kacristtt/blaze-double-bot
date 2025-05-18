@@ -1,5 +1,3 @@
-preinstall:
-  commands:
-    - pip install --upgrade pip
-    - pip install playwright
-    - playwright install chromium
+buildCommand: |
+  chmod +x start.sh
+startCommand: ./start.sh

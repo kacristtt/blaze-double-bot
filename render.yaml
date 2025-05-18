@@ -1,8 +1,5 @@
-services:
-  - type: web
-    name: blaze-double-bot
-    env: python
-    buildCommand: |
-      pip install -r requirements.txt
-      playwright install
-    startCommand: python main.py
+preinstall:
+  commands:
+    - pip install --upgrade pip
+    - pip install playwright
+    - playwright install chromium

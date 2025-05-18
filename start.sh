@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Instalando navegadores do Playwright..."
+echo "🔧 Instalando navegador Chromium..."
 playwright install chromium
-echo "Iniciando o bot..."
+echo "🚀 Iniciando o bot..."
 python main.py
